@@ -7,8 +7,8 @@
     <ProjectGuid>{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ClassLibrary1</RootNamespace>
-    <AssemblyName>ClassLibrary1</AssemblyName>
+    <RootNamespace>ValtechPageObjectModel</RootNamespace>
+    <AssemblyName>ValTechPageObjectModel</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
