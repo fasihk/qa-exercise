@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValTechPageObjectModel", "ClassLibrary1\ValTechPageObjectModel.csproj", "{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{BB728213-B0D4-4837-83DE-3B79BBC330CC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB728213-B0D4-4837-83DE-3B79BBC330CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB728213-B0D4-4837-83DE-3B79BBC330CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB728213-B0D4-4837-83DE-3B79BBC330CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB728213-B0D4-4837-83DE-3B79BBC330CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
