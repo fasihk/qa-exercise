@@ -1,25 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Support;
-using OpenQA.Selenium.Support.PageObjects;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+//this references the class library ValTechPageObjects.dll
 
-
-namespace ValTechPageObjectModel
+namespace ValTechAutomationFramework
 
 {
     public class HomePage
     {
-        private IWebDriver webDriverObj;
+        IWebDriver driver = new ChromeDriver();
+        public HomePage (IWebDriver driver)
+        {
+            this.driver = driver;
+        }
+        //Locate elements on the page that the tests have to interact with 
 
-        [FindsBy(How = How.Name, Using = "recent blogs")]
-        public IWebElement RecentBlogsSection { get; set; }
+        By AcceptCookieButton = By.Id("CybotCookiebotDialogBodyButtonAccept");
+        By recentBlogs = By.Name("recent blogs");
+        By FirstBlogListingItem = By.LinkText("The future for DevOps");
 
-        [FindsBy(How = How.LinkText, Using = "The future for DevOps")]
-        public IWebElement FirstBlogListingItem { get; set; }
+
+        public void AcceptCookies()
+        {
+            driver.FindElement(AcceptCookieButton).Click();
+        }
+
+        public IWebElement FindRecentBlogsSection()
+        {
+           return driver.FindElement(recentBlogs);
+        }
+
+        public void ClickFirstBlogItem ()
+        {
+            driver.FindElement(FirstBlogListingItem).Click();
+
+        }
 
     }
 
