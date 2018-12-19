@@ -14,7 +14,7 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class WorkPage
     {
-         private IWebDriver driver;
+        private IWebDriver driver;
         public IWebElement WorkPageHeading;
 
         //Locate elements on the page that the tests have to interact with 
