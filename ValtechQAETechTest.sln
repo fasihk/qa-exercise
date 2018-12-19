@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValTechPageObjects", "ClassLibrary1\ValTechPageObjects.csproj", "{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ValTechPages", "ClassLibrary1\ValTechPages.csproj", "{AFB0F51F-3964-4C53-88EF-EE26051CCCE1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SeleniumTests", "SeleniumTests\SeleniumTests.csproj", "{8E02089E-F8C7-49D7-BBCE-8EB616D6F442}"
 EndProject
