@@ -14,12 +14,12 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class ContactPage
     {
-        IWebDriver driver = new ChromeDriver();
-        public IWebElement noOfOfficesString;
+        private IWebDriver driver;
+        public String noOfOfficesString;
 
         //Locate elements on the page that the tests have to interact with 
         readonly By noOfOfficesStringLocator = By.XPath("//*[@id='valtech-wrapper']/div/main/vue/div/div[2]/div/div[1]/h3");
-
+        
         public ContactPage(IWebDriver driver)
         {
             this.driver = driver;
@@ -27,7 +27,7 @@ namespace ValtechPages.ValTechPageObjects
 
         public ContactPage FindNoOfOfficesString()
         {
-            noOfOfficesString = driver.FindElement(noOfOfficesStringLocator);
+            noOfOfficesString = driver.FindElement(noOfOfficesStringLocator).Text;
             return this;
         }
     }

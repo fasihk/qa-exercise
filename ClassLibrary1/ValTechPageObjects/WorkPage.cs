@@ -14,11 +14,16 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class WorkPage
     {
-        IWebDriver driver = new ChromeDriver();
+         private IWebDriver driver;
         public IWebElement WorkPageHeading;
 
         //Locate elements on the page that the tests have to interact with 
-        readonly By LorealWorkLocator = By.XPath("//*[@id='valtech-wrapper']/div/main/div[3]/div/div/div/div[1]/div/a");
+        
+        public By WorkPageHeadingLocator = By.XPath("//h1[@class='site-chapter__box__title']");
+
+        //alternative element XPath could be //*[@id="valtech-wrapper"]/div/main/div[1]/div/div[2]/h1
+        //or "//h1[@class='site-chapter__box__title']"
+        // or //hgroup[@class='masthead-secondary__hgroup']//following::h2
 
         public WorkPage(IWebDriver driver)
         {
@@ -27,8 +32,9 @@ namespace ValtechPages.ValTechPageObjects
 
         public WorkPage FindWorkPageHeading()
         {
-            WorkPageHeading = driver.FindElement(LorealWorkLocator);
+            WorkPageHeading = driver.FindElement(WorkPageHeadingLocator);
             return this;
         }
+        
     }
 }

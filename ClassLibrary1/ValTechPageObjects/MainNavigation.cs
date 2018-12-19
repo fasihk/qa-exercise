@@ -9,12 +9,12 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class MainNavigation
     {
-        public ChromeDriver driver = new ChromeDriver();
+        private ChromeDriver driver;
         
         //Locate elements on the page that the tests have to interact with 
         By AcceptCookieButton = By.Id("CybotCookiebotDialogBodyButtonAccept");
         By MainNavIcon = By.XPath("/html/body/nav/div[1]/button[1]");
-        By MainNavContactUsLink = By.XPath("/html/body/nav/div[2]/div[1]/div[3]/div/ul[2]/ul/li[3]/a")
+        By MainNavContactUsLink = By.XPath("/html/body/nav/div[2]/div[1]/div[3]/div/ul[2]/ul/li[3]/a");
         By AboutMenuItem = By.XPath("/html/body/nav/div[2]/div[1]/div[3]/div/ul[1]/li[5]/button");
         By AboutMenuItemButton = By.XPath("/html/body/nav/div[2]/div[1]/div[2]/div/div[5]/div[2]/a");
         By ServicesMenuItem = By.XPath("/html/body/nav/div[2]/div[1]/div[3]/div/ul[1]/li[2]/button");
@@ -38,6 +38,7 @@ namespace ValtechPages.ValTechPageObjects
            driver.FindElement(MainNavIcon).Click();
            return this; 
         }
+
         public AboutPage OpenAboutPage()
         {
             driver.FindElement(AboutMenuItem).Click();
@@ -80,7 +81,6 @@ namespace ValtechPages.ValTechPageObjects
              driver.FindElement(FirstBlogListingItem).Click();
 
          }*/
-
 
     }
 

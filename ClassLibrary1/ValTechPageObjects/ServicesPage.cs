@@ -14,11 +14,11 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class ServicesPage
     {
-        IWebDriver driver = new ChromeDriver();
+        private IWebDriver driver;
         public IWebElement ServicesPageHeading;
 
         //Locate elements on the page that the tests have to interact with 
-        readonly By ServicesPageHeadingLocator = By.XPath("//hgroup[@class='masthead-secondary__hgroup']//following::h1");
+        public By ServicesPageHeadingLocator = By.XPath("//div[@class='site-chapter__box']//following::h1");
         
         public ServicesPage(IWebDriver driver)
         {
@@ -30,5 +30,7 @@ namespace ValtechPages.ValTechPageObjects
             ServicesPageHeading =  driver.FindElement(ServicesPageHeadingLocator);
             return this;
         }
+
+        
     }
 }

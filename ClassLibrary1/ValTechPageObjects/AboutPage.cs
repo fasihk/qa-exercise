@@ -13,11 +13,11 @@ namespace ValtechPages.ValTechPageObjects
 {
     public class AboutPage
     {
-        private ChromeDriver driver = new ChromeDriver();
+        private ChromeDriver driver ;
         public IWebElement AboutPageHeading;
 
         //Locate the About Page Heading
-        readonly By AboutPageHeadingLocator = By.XPath("//hgroup[@class='detail-text-block__hgroup']//following::h1");
+        readonly By AboutPageHeadingLocator = By.XPath("//div[@class='site-chapter__box']//following::h1");
         
         public AboutPage(ChromeDriver driver)
         {
@@ -30,6 +30,6 @@ namespace ValtechPages.ValTechPageObjects
             AboutPageHeading = driver.FindElement(AboutPageHeadingLocator);
            
             return this;
-        }   
+        }
     }
 }
