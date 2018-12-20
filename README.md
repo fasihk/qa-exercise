@@ -42,7 +42,7 @@ Finish up
 ---------
 Once you're finished, commit & push your changes, send us a link to your fork.
 
-==================================================================================================================================
+===================================================
 Notes on how to set up and run the tests implemented in response to the Excercise
 ---------------------------------------------------------------------------------
 
