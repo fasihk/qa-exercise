@@ -51,9 +51,9 @@ Framework Archietecture
 The framework has been developed using Selenium Webdriver as the browser automation tool and C# as the programming language in  MS Visual Studio Enterprise 2017 as the IDE. 
 The key components of the framework include:
 
-1. A C# class libarary implementing the PO Model for valtech.co.uk as asked in Excercise 1. The class library is referenced by another project which contains the test code. The C# project name for this class library is: 'ValTechPages'.
+1. A C# class libarary implementing the PO Model for valtech.co.uk as asked in Excercise 1. The class library is referenced by another project which contains the test code. The C# project name for this class library is: 'ValTechPages.csproj'.
 
-2 - Selenium WebDriver tests implemented as C# unit tests in a separate C# Unit Test Project. The unit test project name containing the  tests is: 'SeleniumTests'
+2 - Selenium WebDriver tests implemented as C# unit tests in a separate C# Unit Test Project. The unit test project name containing the  tests is: 'SeleniumTests.csproj'
 
 3 - The .Net packages used in the framework are: MSTest.TestAdapter.1.4.0, MSTest.TestFramework.1.4.0, Selenium.Support.3.1.141.0, Selenium.WebDriver.3.141.0, WebDriver.ChromeDriver.26.14.313457.1. The first two packages are only needed for the unit test project where as the last three are needed by both the projects.
 
